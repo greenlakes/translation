@@ -10,11 +10,14 @@ Rails.application.routes.draw do
   
   get 'pages/home'
 
-  get 'pages/about'
+  get 'about' => 'pages#about'
 
-  get 'pages/services'
+  get 'services' => 'pages#services'
+  
+  get 'faq' => 'pages#faq'
 
-  get 'pages/contact'
-
+  get 'contact' => 'pages#contact'
+  
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

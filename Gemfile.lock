@@ -48,9 +48,14 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
+    autoprefixer-rails (6.7.2)
+      execjs
     awesome_nested_set (3.1.1)
       activerecord (>= 4.0.0, < 5.1)
     bcrypt (3.1.11)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     bourbon (4.3.2)
       sass (~> 3.4)
       thor (~> 0.19)
@@ -97,6 +102,8 @@ GEM
     ffi (1.9.17)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     friendly_id (5.2.0)
       activerecord (>= 4.0.0)
     globalid (0.3.7)
@@ -333,8 +340,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
+  font-awesome-sass (~> 4.7.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
