@@ -18,13 +18,13 @@
           <div data-hook="cart_items">
             <%= render :partial => 'form', :locals => { :order_form => order_form } %>
           </div>
-<hr>
-          <div class="links columns sixteen alpha omega form-group" data-hook="cart_buttons">
+          <hr>
+          <div class="form-group" data-hook="cart_buttons">
             <%= order_form.text_field :coupon_code, :size => 10, :placeholder => Spree.t(:coupon_code), class: 'form-control' %>
-            <%= button_tag :class => 'primary btn btn-success', :id => 'update-button' do %>
+            <%= button_tag :class => 'primary', :id => 'update-button', class: 'btn btn-success' do %>
               <%= Spree.t(:update) %>
             <% end %>
-            <%= button_tag :class => 'button checkout primary btn btn-primary', :id => 'checkout-link', :name => 'checkout' do %>
+            <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout', class: 'btn btn-default' do %>
               <%= Spree.t(:checkout) %>
             <% end %>
           </div>
@@ -32,7 +32,7 @@
         </div>
       <% end %>
     </div>
-<hr>
+    <hr>
     <div id="empty-cart" data-hook>
       <%= form_tag empty_cart_path, :method => :put do %>
         <p id="clear_cart_link" data-hook>
