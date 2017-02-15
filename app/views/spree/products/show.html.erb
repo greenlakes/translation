@@ -40,7 +40,7 @@
               <div itemprop="description" data-hook="description">
                 <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
               </div>
-              <div id="cart-form" data-hook="cart_form">
+              <div id="form-control" data-hook="cart_form">
                 <%= render :partial => 'cart_form' %>
               </div>
             </div>
