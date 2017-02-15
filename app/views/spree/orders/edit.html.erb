@@ -24,7 +24,7 @@
             <%= button_tag :class => 'primary', :id => 'update-button', class: 'btn btn-success' do %>
               <%= Spree.t(:update) %>
             <% end %>
-            <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout', class: 'btn btn-default' do %>
+            <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout', class: 'btn btn-primary' do %>
               <%= Spree.t(:checkout) %>
             <% end %>
           </div>
@@ -36,9 +36,9 @@
     <div id="empty-cart" data-hook>
       <%= form_tag empty_cart_path, :method => :put do %>
         <p id="clear_cart_link" data-hook>
-        <%= submit_tag Spree.t(:empty_cart), :class => 'button gray btn btn-default' %>
+        <%= submit_tag Spree.t(:empty_cart), :class => 'button gray btn btn-danger' %>
         <%= Spree.t(:or) %>
-        <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue button gray btn btn-default' %>
+        <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue button gray btn btn-warning' %>
         </p>
       <% end %>
     </div>
