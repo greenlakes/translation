@@ -1,3 +1,43 @@
+<!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+               
+                <div class="fill" style="background-image:url('assets/slide1');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('assets/slide2');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('assets/slide3');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
 
     <!-- Page Content -->
     <div class="container">
@@ -6,7 +46,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to the home of professional Russian translations
+                    Welcome to the UK home of professional Russian translation services
                 </h1>
             </div>
             <div class="col-md-4">
@@ -15,9 +55,7 @@
                         <h4><i class="fa fa-fw fa-check"></i> Russian translation </h4>
                     </div>
                     <div class="panel-body">
-                        <a href="#"><img src="assets/1.jpg" class="img-responsive" "img-rounded"alt="Image"></a>
-    
-                        <hr>
+                
                         <p class="text-justify">We translate various documents including technical, website, letter & mail, advertising, health & safety manuals, CVs, medicals, bank statements, high school/college/university transcripts, ect.  We do it in a way that maintains the complete context and intention of the original author.</p>
                         <a href="#" class="btn btn-default btn btn-primary">Learn More</a>
                     </div>
@@ -52,7 +90,7 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Russian Translation UK</h2>
+                <h2 class="page-header">Certified and Legal Russian translations</h2>
             </div>
             <div class="col-md-6">
                 <p>Our competence includes:</p>
@@ -68,7 +106,7 @@
                 <p>We provide accurate and  reasonably priced written translations from English to Russian languages and vice versa in different categories, such as general, administrative, educational, commercial,  medical, economic, computer, technical, etc.</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <img class="img-responsive" src="assets/1.jpg" alt="translation">
             </div>
         </div>
         <!-- /.row -->
@@ -82,7 +120,7 @@
                     <p>We provide accurate and  reasonably priced written translations from English to Russian languages and vice versa in different categories, such as general, administrative, educational, commercial,  medical, economic, computer, technical, etc. </p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <a class="btn btn-lg btn-default btn-block" href="/order">Order translation now</a>
                 </div>
             </div>
         </div>
@@ -91,7 +129,7 @@
 	<div class="page_block_page_width">
 		<div class="page_block_inner">
 
-			<h1>Try  now!</h1>			
+					
 							<div class="fb-like" data-href="https://www.russian-translation.co.uk/home.htm" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 						
 		</div>
@@ -102,5 +140,13 @@
 
     </div>
     <!-- /.container -->
-
-   
+    
+    
+ 
+     
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('#myCarousel').carousel({
+        interval: 4000 //changes the speed
+    })
+    </script>
