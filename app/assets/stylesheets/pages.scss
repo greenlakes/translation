@@ -137,4 +137,126 @@ ul.dropdown-menu li a {
     color:#fff;
 }
 
+
+
 //addedd by gibbon
+
+// added by makak
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.navbar-brand{
+		padding-right: 10px;
+	}
+	.icons{
+		display: none;
+		position: absolute;
+		right: 34px;
+		top: 40px;
+	}
+	.icons li{
+		float: none;
+	}
+	.icons li a{
+		padding: 5px;
+	}
+	.globe{
+		display: block;
+	}
+	.card-row{
+		text-align: center;
+	}
+	
+	
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.menu{
+		padding: 0;
+	}
+	.navbar-brand img{
+		top: -15px;
+		max-height: 50px;
+	}
+	.navbar-nav > li > a{
+		transition: all .5s;
+	}
+	.navbar-default .navbar-nav > li.active-link > a{
+		border-bottom: 0;
+		color: #fff;
+		background: #d42819;
+	}
+	.navbar-default .navbar-nav:not(.icons) > li > a:hover{
+		border-bottom: 0;
+		color: #fff;
+		background: #d42819;
+	}
+	.icons{
+		display: block !important;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	.icons li{
+		display: inline-block;
+	}
+	.globe{
+		display: none;
+	}
+	.card-row{
+		margin-bottom: 0;
+	}
+	.card{
+		margin-bottom: 50px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header,
+	.slogan{
+		margin-bottom: 30px;
+	}
+	.slogan h1{
+		font-size: 25px;
+	}
+	.icons{
+		display: none;
+		position: absolute;
+		right: 34px;
+		top: 40px;
+	}
+	.icons li{
+		float: none;
+	}
+	.icons li a{
+		padding: 5px;
+	}
+	.globe{
+		display: block;
+	}
+	.card-row{
+		text-align: center;
+	}
+	
+	
+}
+
+@media only screen and (min-width : 993px) {
+	.icons{
+		display: block !important;
+	}
+}
+
