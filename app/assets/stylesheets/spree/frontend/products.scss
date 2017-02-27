@@ -14,7 +14,7 @@ a.btn.btn-primary {
 }
 
 ul.nav.navbar-nav.navbar li a {
-    color: #ffffff;
+    color: #fff;
 }
 
 ul.nav.navbar-nav.navbar li a:hover {
@@ -29,4 +29,8 @@ h1.page-header {
 ul.dropdown-menu li a {
     background-color: #337ab7;
     color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
 }
