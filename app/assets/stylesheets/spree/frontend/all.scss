@@ -6,33 +6,5 @@
 @import "spree/frontend/checkout";
 @import "spree/frontend/products";
 @import "spree/frontend/devise";
+@import "spree/frontend/base";
 
-//below is addedd by gibbon
-
-.navbar {
-    background-color:#337ab7;
-}
-
-ul.nav.navbar-nav.navbar li a {
-    color: #ffffff;
-}
-
-ul.dropdown-menu > li > a {
-    background-color: #337ab7;
-    color: #ffffff;
-}
-
-a.cart-info.full {
-    color: #fff;
-}
-
-.navbar-default .navbar-nav > li > a{
-    color:#fff;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color:#ffff00;
-}
-
-
-//addedd by gibbon
