@@ -49,7 +49,9 @@
                             <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
-                    <div id="success"></div>
+                    <div id="success">
+                        <input type="hidden" name="_next" value="/thanks" />
+                    </div>
                     <!-- For success/fail messages -->
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
