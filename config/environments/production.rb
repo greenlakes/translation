@@ -56,6 +56,20 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "translation_#{Rails.env}"
   config.action_mailer.perform_caching = false
+  
+  
+config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.smtp_settings = {
+   address:              'smtp.mailgun.org',
+   port:                 587,
+   domain:               'russian-translation.co.uk',
+   user_name:            'postmaster@mg.russian-translation.co.uk',
+   password:             '6c126dc2d636104e983b79bb8e615ef8 ',
+   authentication:       'plain',
+   enable_starttls_auto: true  
+}
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -84,3 +98,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
