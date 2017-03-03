@@ -1,6 +1,7 @@
-<div class='row'>
+
   <div class="col-md-6" data-hook="billing_fieldset_wrapper">
-    <fieldset id="billing" data-hook>
+    
+    <fieldset id="billing" >
       <%= form.fields_for :bill_address do |bill_form| %>
         <legend><%= Spree.t(:billing_address) %></legend>
         <%= render :partial => 'spree/address/form', :locals => { :form => bill_form, :address_type => 'billing', :address => @order.bill_address } %>
@@ -12,7 +13,7 @@
         </div>
       <% end %>
     </fieldset>
-  </div>
+    </div>
 
   <div class="col-md-6" data-hook="shipping_fieldset_wrapper">
     <fieldset id="shipping" data-hook>
@@ -22,12 +23,13 @@
       <% end %>
     </fieldset>
   </div>
-</div>
+  
+
 <hr>
-<div class='row'>
-  <div class="form-buttons col-md-12" data-hook="buttons">
-    <div class='row'>
-      <div class='col-md-9'>
+    
+ 
+      
+      <div class='col-md-9' data-hook='buttons'>
       <% if try_spree_current_user %>
         <div data-hook="save_user_address" class='checkbox'>
           <%= label_tag :save_user_address do %>
@@ -37,9 +39,9 @@
         </div>
       <% end %>
       </div>
+      
       <div class='col-md-3'>
         <%= submit_tag Spree.t(:save_and_continue), :class => 'continue btn btn-success btn-block' %>
       </div>
-    </div>
-  </div>
-</div>
+      
+ 

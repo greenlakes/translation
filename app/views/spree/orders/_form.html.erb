@@ -1,5 +1,6 @@
+<div class = 'col-12-md'> 
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
-<table id="cart-detail" class='table' data-hook>
+<table class="table table-bordered" id="cart-detail" data-hook>
   <thead>
     <tr data-hook="cart_items_headers">
       <th class="cart-item-description-header" colspan="2"><%= Spree.t(:item) %></th>
@@ -26,3 +27,4 @@
     <td></td>
   </tr>
 </table>
+</div>

@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'services' => 'pages#services'
   
   get 'faq' => 'pages#faq'
+  
+ get 'thanks' => 'pages#thanks'  
 
   get 'contact' => 'pages#contact'
   
